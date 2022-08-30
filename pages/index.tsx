@@ -2,6 +2,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
 import { useState } from 'react';
+import ComboBox from "../components/ComboBox"
 
 const data = [
   'hell',
@@ -44,7 +45,7 @@ const Home: NextPage = () => {
   };
 
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
+    <div className="flex min-h-screen flex-col items-center justify-center py-2 bg-slate-100">
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
@@ -74,6 +75,7 @@ const Home: NextPage = () => {
             </div>
           </div>
         </section>
+        <ComboBox/>
       </main>
 
       <footer className="flex h-24 w-full items-center justify-center border-t">

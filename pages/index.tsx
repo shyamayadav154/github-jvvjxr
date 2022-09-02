@@ -2,7 +2,8 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
 import { useState } from 'react';
-import ComboBox from "../components/ComboBox"
+import ComboBox from "../components/ComboBox.jsx"
+import CalendarTw from "../components/CalendarTw"
 
 const data = [
   'hell',
@@ -76,6 +77,7 @@ const Home: NextPage = () => {
           </div>
         </section>
         <ComboBox/>
+        <CalendarTw/>
       </main>
 
       <footer className="flex h-24 w-full items-center justify-center border-t">
